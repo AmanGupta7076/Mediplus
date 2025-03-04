@@ -308,6 +308,7 @@ html{
     display: grid;
     grid-template-columns: repeat(2,48%);
     justify-content: space-between;
+    line-height: 2;
 }
 .left-2 p,.out,.in{
     color: grey;
@@ -317,7 +318,7 @@ html{
     color: #1A76d1;
 }
 .right-2 iframe{
-    height: 300px;
+    height: 350px;
     width: 550px;
 }
 .fifth .left-2 hr{
@@ -455,7 +456,7 @@ html{
     grid-template-columns: repeat(3,32%);
     justify-content: space-between;
     /* background-color: #fff; */
-    padding-left: 45px;
+    /* padding-left: 45px; */
 }
 
 .calvin{
@@ -489,15 +490,22 @@ html{
     display: grid;
     grid-template-columns: repeat(5,17%);
     justify-content: space-between;
-    line-height: 1.8;
+    line-height: 1.7;
     color: grey;
 }
 .cent .fa, .centt .fa{
-    /* text-align: center; */
-    font-size: 2rem; 
+    text-align: center;
+    font-size: 1.5rem; 
+}
+.cent h3{
+    font-size: 14px;
 }
 .centt span, .central hr, .left-4 span, .left-4 b{
     color: #1A76d1;
+}
+.beats{
+    font-size: 14px !important;
+    margin-bottom: 20px;
 }
 
 .flurry{
@@ -1022,9 +1030,9 @@ form input,.left-7 form select{
         padding-right: 30px;
     }
     .central{
-        grid-template-columns: repeat(3,33.3%);
+        grid-template-columns: repeat(3,30%);
         padding-bottom: 20px;
-        line-height: 2.5;
+        line-height: 1.5;
     }
     .intel img{
         width: 40%;
@@ -1123,7 +1131,40 @@ form input,.left-7 form select{
      .fourth{
         height: 100%;
      }
+     .intel img{
+        width: 80%;
+     }
 }
+
+@media only screen and (max-width:426px){
+   
+   .second{
+    grid-template-columns: 80% 20%;
+   }
+   .second span{
+    place-self: end;
+   }
+    .right-2 iframe{
+        width: 100%;
+        /* display: none; */
+    }
+
+    .over{
+        grid-template-columns: 100%;
+        line-height: 2;
+    }
+    textarea,form input,.left-7 form select{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    .left-7 p{
+        margin-top: 20px;
+    }
+    .right9-2 form input{
+        width: 330px;
+    }
+}
+
 
 @media only screen and (max-width:325px){
 
@@ -1136,7 +1177,16 @@ form input,.left-7 form select{
     
     .fifth .right-2 iframe{
         height: 400px;
-        width: 10%;
+        width: 100%;
         /* display: none; */
+    }
+    .calvin img{
+        bottom: -50px;
+    }
+    .right-8 button{
+        width: 150px;
+    }
+    .right9-2 form input{
+        width: 230px;
     }
 }
