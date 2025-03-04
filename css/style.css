@@ -213,6 +213,7 @@ html{
 .container .box:hover{
     transform: translateY(-15px);
     transition-duration: 1s;
+    box-shadow: 0 20px 80px rgba(26, 118, 209, 0.7);
 }
 
 
@@ -1028,6 +1029,9 @@ form input,.left-7 form select{
     .second button{
         place-self: end;
     }
+    .box{
+        top: 0px;
+    }
     .third{
         background-position: right;
     }
@@ -1143,7 +1147,7 @@ form input,.left-7 form select{
     }
     .right{
         padding: 20px 0;
-        /* text-align: center; */
+        text-align: center;
         /* justify-content: space-between; */
     }
     .second{
@@ -1230,9 +1234,10 @@ form input,.left-7 form select{
         /* width: 100%; */
     }
     .secondd button, .secondd .btn{
-        width: 300px;
+        width: 320px;
         margin-bottom: 20px;
         font-size: 1rem;
+        
     }
     .right span{
         /* grid-template-columns: 100%; */
@@ -1261,7 +1266,8 @@ form input,.left-7 form select{
     }
     .container .box{
         top: 0px;
-        margin: 60px 0;
+        /* margin: 60px 0; */
+        margin-bottom: 20px;
     }
     .right9-2 form input{
         width: 240px;
