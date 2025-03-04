@@ -1190,7 +1190,7 @@ form input,.left-7 form select{
         height: 500px;
     }
     .container .box{
-        top: -250px;
+        top: 0px;
         /* margin: 50px 0; */
     }
     .right9-2 form input{
