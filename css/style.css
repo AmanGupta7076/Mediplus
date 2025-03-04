@@ -1187,11 +1187,11 @@ form input,.left-7 form select{
         padding-left: 0px;
     }
     .third{
-        height: 500px;
+        /* height: 500px; */
     }
     .container .box{
         top: 0px;
-        /* margin: 50px 0; */
+        margin: 50px 0;
     }
     .right9-2 form input{
         width: 300px;
