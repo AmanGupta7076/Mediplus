@@ -53,6 +53,7 @@ html{
 .right{
     text-align: right;
     font-size: 0.8rem;
+   
     /* background: red; */
 }
 .right span{
@@ -75,7 +76,7 @@ html{
 .second ul{
     list-style: none;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 .second ul li{
     display: inline;
@@ -90,6 +91,7 @@ html{
 
 .second button{
     padding: 10px;
+    height: 45px;
     font-size: 0.8rem;
     background-color: #1A76d1;
     color: #fff;
@@ -705,13 +707,27 @@ html{
 .right-6 p{
     color: grey;
 }
-
+.corn{
+    position: relative;
+    overflow: hidden;
+}
+.corn .line{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 2px solid #2389ef;
+    left: -500px;
+}
+.corn:hover .line{
+    left: 0;
+    transition-duration: 1s;
+}
 .corn .right-6 b:hover{
     color: #1A76d1;
 }
-.corner .corn .right-6:hover{
+/* .corner .corn .right-6:hover{
     border-bottom: 2px solid #2389ef;
-}
+} */
 
 /* fourteen section */
 
@@ -1200,6 +1216,9 @@ form input,.left-7 form select{
 
 @media only screen and (max-width:421px){
     
+    html{
+        font-size: 15px;
+    }
     .main{
         height: 70vh;
     }
@@ -1211,7 +1230,7 @@ form input,.left-7 form select{
         /* width: 100%; */
     }
     .secondd button, .secondd .btn{
-        width: 370px;
+        width: 300px;
         margin-bottom: 20px;
         font-size: 1rem;
     }
@@ -1242,18 +1261,27 @@ form input,.left-7 form select{
     }
     .container .box{
         top: 0px;
-        margin: 30px 0;
+        margin: 60px 0;
     }
     .right9-2 form input{
-        width: 270px;
+        width: 240px;
+    }
+    .right9-2 span{
+        top: 0px;
+    }
+    .right-8 button{
+        width: 120px;
     }
 }
 
 
 @media only screen and (max-width:325px){
 
+    
+    
     .right{
         grid-template-columns: 100%;
+        font-size: 0.6rem !important;
     }
     .third{
         background-position: center;
@@ -1274,3 +1302,5 @@ form input,.left-7 form select{
         width: 230px;
     }
 }
+
+
