@@ -28,7 +28,7 @@ html{
     position: relative;
     top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid gray;
+    border-bottom: .2px solid gray;
     display: grid;
     grid-template-columns: repeat(2,50%);
     margin-bottom: 20px;
@@ -397,12 +397,12 @@ html{
 }
 
 .style .blocks{
-    width: 21.5%;
-    height: 100%;
+    width: 93%;
+    height: 22%;
     text-align: center;
     background-color: #2389ef;
     position: absolute;
-    top: 0;
+    /* top: 0; */
     opacity: 0;
 }
 .style .blocks button{
@@ -419,6 +419,8 @@ html{
     opacity: .7;
     transition-duration: 1s;
 }
+
+
 /* eighth section */
 
 .note{
@@ -1144,6 +1146,7 @@ form input,.left-7 form select{
     .first{
         grid-template-columns: 100%;
         text-align: center;
+        padding-bottom: 0px;
     }
     .right{
         padding: 20px 0;
@@ -1266,8 +1269,8 @@ form input,.left-7 form select{
     }
     .container .box{
         top: 0px;
-        /* margin: 60px 0; */
-        margin-bottom: 20px;
+        margin: 60px 0;
+        /* margin-bottom: 20px; */
     }
     .right9-2 form input{
         width: 240px;
